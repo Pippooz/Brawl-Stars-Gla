@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Lilita One';
-    min-height: 100vh;
     background-image: url(bg.jpg);
     background-size: cover;
     display: flex;
@@ -10,29 +9,79 @@ body {
     justify-content: center;
 }
 
-button {
-    font-family: inherit;
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.buttons-form .box button {
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo img {
+    width: 200px;
+}
+
+input[type=submit] {
+    font-family: inherit;
     background: #ECC508;
     color: white;
+    font-size: 300%;
+    width: 290px;
+    height: 95px;
     border-radius: 4px;
     padding:.5em 2.1em;
-    text-transform: uppercase;
-    font-size: 300%;
     border: 3px solid #000;
-    box-shadow: 0px 3.4px .8px rgba(2, 19, 52, 0.867), inset 0 4px .8px #F7EC44, inset 0 -4.6px .8px #A85A24;
-}
+    text-transform: uppercase;
+    box-shadow: 0px 3.4px .8px rgba(2, 19, 52, 0.867),
+                inset 0 4px .8px #F7EC44,
+                inset 0 -4.6px .8px #A85A24;
+    transition: all .5s;
 
-.buttons-form .box button:hover {
-    cursor: pointer;
-}
-
-.skew-fix {
-    display:inline-block;
+    display: inline-block;
     transform: skew(-6deg);
+    
 }
+
+input[type=submit]:hover {
+    cursor: pointer;
+    
+    transform: skew(-6deg) scale(.9);
+
+}
+
+.btn-text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.search-zone {
+    margin-top: 125px;
+    margin-bottom: 90px;
+    display: flex;
+}
+
+input[type=text]  {
+    text-align: center;
+}
+
+.search-zone .form-item input[type=text] {
+    font-family: inherit;
+    box-shadow: 0px 5px .8px rgba(2, 19, 52, 0.867);
+    border: none;
+    outline: none;
+    background: white;
+    padding: 15px;
+    border-radius: 100px;
+    font-size: 150%;
+    width: 400px;
+    
+}
+
 
 .btn-text {
     font-size: 47px;
@@ -40,4 +89,31 @@ button {
     letter-spacing: -2.8px;
     -webkit-text-stroke: 2.1px #000;
     text-shadow: 3px 3.5px #000;
+    line-height: 7px;
+}
+
+section {
+    display: table;
+    width: 80%;
+}
+  
+section .title-box {
+    background-color: #1B2536;
+    color: white;
+    text-transform: uppercase;
+    height: 50px;
+}
+
+section .title-box-text {
+    line-height: 300%;
+    font-size: 30px;
+} 
+
+
+section .col-1 {
+    display: table-cell;
+    background-color: #89768A;
+    text-transform: capitalize;
+    color: white;
+    border: 2px solid #000;
 }
