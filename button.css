@@ -24,7 +24,7 @@ body {
 .logo img {
     width: 200px;
 }
-
+/*
 input[type=submit] {
     font-family: inherit;
     background: #ECC508;
@@ -44,7 +44,15 @@ input[type=submit] {
     display: inline-block;
     transform: skew(-6deg);
     
+}*/
+
+input[type=submit] {
+    font-family: inherit;
+    background: #ECC508;
+    color: white;
 }
+
+
 
 input[type=submit]:hover {
     cursor: pointer;

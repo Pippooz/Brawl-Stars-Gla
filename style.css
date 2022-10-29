@@ -43,14 +43,11 @@ button {
 
     display: inline-block;
     transform: skew(-6deg);
-    
 }
 
 button:hover {
     cursor: pointer;
-    
     transform: skew(-6deg) scale(.9);
-
 }
 
 .btn-text {
@@ -65,11 +62,11 @@ button:hover {
     display: flex;
 }
 
-input {
+input[type=text] {
     text-align: center;
 }
 
-.search-zone .form-item input {
+.search-zone .form-item input[type=text] {
     font-family: inherit;
     box-shadow: 0px 5px .8px rgba(2, 19, 52, 0.867);
     border: none;
@@ -85,7 +82,7 @@ input {
 
 .btn-text {
     font-size: 47px;
-    transform: skew(6deg);
+    transform: skew(-6deg);
     letter-spacing: -2.8px;
     -webkit-text-stroke: 2.1px #000;
     text-shadow: 3px 3.5px #000;
