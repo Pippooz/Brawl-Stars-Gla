@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brawl Stars Homepage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Brawl GlaGla</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <form class="buttons-form">
-        <div class="box">
-            <button class="skew-fix">
-                <div class="btn-text">Log  In</div>
-            </button>
+    
+    <form action="homepage.php" method="GET"><!--opening form to pass brawl id-->
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div class="search-zone">
+                <div class="form-item">
+                    <input type="text" name="brawl_id" placeholder="#BRAWL ID" required autofocus>
+                </div>
+            </div>
+            <div>
+                <button type="submit" id="search-button" class="btn-text">Search</button>
+            </div>
         </div>
     </form>
+
 </body>
 </html>
