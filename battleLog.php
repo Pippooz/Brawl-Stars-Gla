@@ -4,9 +4,9 @@ class BattleLog{
 
     private $json;
 
-    function __construct($tag) {
+    function __construct($tag, $source) {
         require_once('curl.php');
-        $curl = new Curl('players', $tag);
+        $curl = new Curl($source, $tag);
         $this->json = json_decode($curl->getResult('battlelog'), true);
 
     }

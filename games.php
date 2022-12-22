@@ -7,8 +7,8 @@ error_reporting(E_ALL);
 ?>
 <html>
     <head>
-        <link rel="stylesheet" href="css/grid.css">
-        <link rel="stylesheet" href="css/button.css">
+        <link rel="stylesheet" href="style/grid.css">
+        <link rel="stylesheet" href="style/button.css">
         <style>
             .center {
                 display: block;
@@ -93,14 +93,6 @@ error_reporting(E_ALL);
                 </div>  
             </div> 
         </div>
-
-        <?php
-        
-        require_once('battleLog.php'); 
-        $battleLog = new BattleLog("%232UR8RYY0L");
-        var_dump($battleLog->getRanks());
-        
-        ?>
     </body>
 
     
