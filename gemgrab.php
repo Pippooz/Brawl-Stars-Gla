@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 require_once('battleLog.php'); 
 $battleLog = new BattleLog("%232UR8RYY0L");
 $victories = $battleLog->getVictories();
-$map = $battleLog->gett
+$map = $battleLog->getVictories();
 var_dump ($battleLog);
 
 ?>

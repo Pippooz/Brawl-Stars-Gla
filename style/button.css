@@ -1,127 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-
-body {
-    font-family: 'Lilita One';
-    background-image: url(bg.jpg);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.logo img {
-    width: 200px;
-}
-/*
-input[type=submit] {
-    font-family: inherit;
-    background: #ECC508;
-    color: white;
-    font-size: 300%;
-    width: 290px;
-    height: 95px;
-    border-radius: 4px;
-    padding:.5em 2.1em;
-    border: 3px solid #000;
-    text-transform: uppercase;
-    box-shadow: 0px 3.4px .8px rgba(2, 19, 52, 0.867),
-                inset 0 4px .8px #F7EC44,
-                inset 0 -4.6px .8px #A85A24;
-    transition: all .5s;
-
-    display: inline-block;
-    transform: skew(-6deg);
-    
-}*/
-
-input[type=submit] {
-    font-family: inherit;
-    background: #ECC508;
-    color: white;
-}
-
-
-
-input[type=submit]:hover {
+.button {
+    position: relative;
     cursor: pointer;
-    
-    transform: skew(-6deg) scale(.9);
-
-}
-
-.btn-text {
+    width: 58px;
+    height: 33px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: flex;
-}
-
-.search-zone {
-    margin-top: 125px;
-    margin-bottom: 90px;
-    display: flex;
-}
-
-input[type=text]  {
-    text-align: center;
-}
-
-.search-zone .form-item input[type=text] {
-    font-family: inherit;
-    box-shadow: 0px 5px .8px rgba(2, 19, 52, 0.867);
-    border: none;
-    outline: none;
-    background: white;
-    padding: 15px;
-    border-radius: 100px;
-    font-size: 150%;
-    width: 400px;
-    
-}
-
-
-.btn-text {
-    font-size: 47px;
-    transform: skew(6deg);
-    letter-spacing: -2.8px;
-    -webkit-text-stroke: 2.1px #000;
-    text-shadow: 3px 3.5px #000;
-    line-height: 7px;
-}
-
-section {
-    display: table;
-    width: 80%;
-}
-  
-section .title-box {
-    background-color: #1B2536;
+    text-decoration: none;
+    font-family: "Nougat", sans-serif;
+    font-size: 12px;
     color: white;
+    background: linear-gradient(180deg, #343c50 63%, #38545f 100%);
+    transition: 0.4s;
+    box-shadow: 0px 4px 0 #00000047;
+    transform: skewX(-9deg);
     text-transform: uppercase;
-    height: 50px;
-}
-
-section .title-box-text {
-    line-height: 300%;
-    font-size: 30px;
-} 
-
-
-section .col-1 {
-    display: table-cell;
-    background-color: #89768A;
-    text-transform: capitalize;
-    color: white;
-    border: 2px solid #000;
-}
+    margin-bottom: 24px;
+    border-radius: 5px;
+    border: 1px solid #050E25;
+  }
+  .button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 200;
+    background-color: #5A5371;
+    height: 3px;
+  }
+  .button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    background-color: #252C3C;
+    height: 3px;
+  }
+  .button:active {
+    transform: scale(0.9) skewX(-9deg);
+  }
+  .button.top-btn {
+    width: 74px !important;
+    height: 50px !important;
+  }
+  .button.top-btn-2 {
+    width: 116px !important;
+    height: 50px !important;
+    margin-left: 9px;
+  }
+  .button.game-mode-btn {
+    height: 46px;
+  }
+  .button.game-mode-btn, .button.button-yellow-bottom {
+    border: 1.5px solid black;
+    width: 100%;
+  }
+  .button.bottom-left-button {
+    width: 186px;
+    height: 51px !important;
+  }
+  .button.button-yellow-bottom, .button.bottom-left-button {
+    background: #EEC308;
+    height: 58px;
+    font-size: 22px;
+  }
+  .button.button-yellow-bottom:before, .button.bottom-left-button:before {
+    background-color: #FBEF43;
+    height: 4px;
+  }
+  .button.button-yellow-bottom:after, .button.bottom-left-button:after {
+    background-color: #A5532D;
+    height: 4px;
+  }
+  .button.add-search {
+    background: linear-gradient(0deg, #ffffff61 0%, #fbfbfb1f 100%) !important;
+    width: 40px;
+    border: 1px solid white !important;
+  }
+  .button.add-search:before, .button.add-search:after {
+    background-color: transparent !important;
+  }
+  
+  .btn-title {
+    position: absolute;
+  }
+  .btn-title.title-1 {
+    top: 18px;
+    font-size: 10px;
+  }
+  
