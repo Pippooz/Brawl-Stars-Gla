@@ -6,8 +6,8 @@ error_reporting(E_ALL);
 
 require_once('battleLog.php'); 
 $battleLog = new BattleLog("%232UR8RYY0L", "players");
-$victories = $battleLog->getVictories();
-var_dump ($battleLog);
+$victories = $battleLog->getBrawlers();
+var_dump ($victories);
 
 $i = 0;
 $cont = array();
@@ -39,22 +39,23 @@ var_dump ($victories);
 <html>
     <head>
         
-    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
+        <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
 
     </head>
     <body>
-    <select id="typeSelect" onchange="switchType()">\n 
+        <select id="typeSelect" onchange="switchType()"> 
            
-    <option value="area">Area</option>    
-           <option value="column">Column</option>    
-           <option value="jump-line">Jump Line</option>    
-           <option value="line">Line</option>    
-           <option value="marker">Marker</option>  
-           <option value="spline-area">Spline Area</option>   
-           <option value="spline">Spline</option>    
-           <option value="step-area">Step Area</option>    
-           <option value="step-line">Step Line</option>    
-           <option value="stick">Stick</option></select>
+            <option value="area">Area</option>    
+            <option value="column">Column</option>    
+            <option value="jump-line">Jump Line</option>    
+            <option value="line">Line</option>    
+            <option value="marker">Marker</option>  
+            <option value="spline-area">Spline Area</option>   
+            <option value="spline">Spline</option>    
+            <option value="step-area">Step Area</option>    
+            <option value="step-line">Step Line</option>    
+            <option value="stick">Stick</option>
+        </select>
         <div id="container" style="width: 500px; height: 400px;">
         <script>
          anychart.onDocumentReady(function () {

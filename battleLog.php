@@ -7,7 +7,7 @@ class BattleLog{
     function __construct($tag, $source) {
         require_once('curl.php');
         $curl = new Curl($source, $tag);
-        $this->json = json_decode($curl->getResult('battlelog'), true);
+        $this->json = json_decode($curl->getResult(''), true);
 
     }
 
@@ -25,6 +25,14 @@ class BattleLog{
         return $list;
     }
 
+    function getBrawlers()
+    {
+        $list = new ArrayObject();
+        foreach ($this->json['brawlers'] as $key => $value)
+            $list->append($value);
+        
+        return $list;
+    }
     function getVictories(){
 
         $list = new ArrayObject();

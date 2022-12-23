@@ -4,13 +4,23 @@ class Brawler {
   private $id;
   private $name;
   private $power;
+  private $rank;
+  private $highestTrophies;
   private $trophies;
 
-  function __construct($id, $name, $power, $trophies) {
+  private $starPower;
+  private $gadget;
+
+  function __construct($id, $name, $power, $rank, $highestTrophies, $trophies, $starPower, $gadget) {
     $this->id = $id;
     $this->name = $name;
     $this->power = $power;
+    $this->rank = $rank;
+    $this->highestTrophies = $highestTrophies;
     $this->trophies = $trophies;
+    $this->starPower = $starPower;
+    $this->gadget = $gadget;
+
   }
 
   // Methods

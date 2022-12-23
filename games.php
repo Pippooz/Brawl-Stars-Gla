@@ -73,7 +73,7 @@ error_reporting(E_ALL);
                     <a href="">
                         <input type="image" src="images/gemgrab.png"  width="100%" class="border">
                     </a>
-                </div>  
+                </div>
             </div>   
             <div class="column">
                 <div style="padding:2%">
